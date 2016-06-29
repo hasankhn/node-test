@@ -3,7 +3,7 @@ module.exports = function(app, express, _) {
     router.get('/I/want/title', function(req, res) {
         console.log(req.query);
         if (_.isEmpty(req.query)) {
-            res.status(404).send();
+            res.status(404).send('Please specify your query');
         }
         var query = req.query.address;
         if (typeof query == 'string') {
