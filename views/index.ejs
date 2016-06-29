@@ -1,0 +1,11 @@
+<html>
+ <body>
+ <title><%=name%></title>
+ <h1> Following are the titles of given websites: </h1>
+ <ul>
+   <% for(var i=0;i<query.length;i++) { %>
+   <li><%= query[i] %></li>
+   <%}%>
+ </ul>
+ </body>
+</html>
