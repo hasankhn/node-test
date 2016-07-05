@@ -4,8 +4,12 @@
  <h1> Following are the titles of given websites: </h1>
  <ul>
    <% for(var i=0;i<query.length;i++) { %>
-   <li><%= query[i] %></li>
+   <li><%= query[i] %> - <%=data[i]%></li>
    <%}%>
  </ul>
  </body>
+ <script type="text/javascript">
+var obj = '<%=data%>';
+console.log(obj);
+ </script>
 </html>
